@@ -41,6 +41,8 @@ form.onsubmit = async (event) => {
         })
 
         await schedulesDay()
+
+        clientName.value = ""
     } catch (error) {
         alert("Não foi possível realizar o agendamento.")
         console.log(error)
