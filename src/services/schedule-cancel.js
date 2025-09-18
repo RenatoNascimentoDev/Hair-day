@@ -1,4 +1,4 @@
-import { apiConfig } from "./api-confirg.js"
+import { apiConfig } from "./api-config.js"
 
 export async function scheduleCancel({ id }){
     try {

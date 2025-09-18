@@ -3,10 +3,10 @@ import { schedulesDay } from "./load"
 
 const periods = document.querySelectorAll(".period")
 
-periods.forEach((periods) => {
-    periods.addEventListener("click", async (event) => {
+periods.forEach((period) => {
+    period.addEventListener("click", async (event) => {
         if(event.target.classList.contains("cancel-icon")){
-            const item = event.target.closet("li")
+            const item = event.target.closest("li")
             const { id } = item.dataset
 
             if(id){
